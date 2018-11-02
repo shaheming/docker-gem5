@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-MAINTAINER Eric Van Hensbergen <ericvh@gmail.com>
+LABEL heming "hemings1@uci.edu"
+ENV REFRESHED_AT 2018-10-23
 
 # get dependencies
 RUN apt-get update
