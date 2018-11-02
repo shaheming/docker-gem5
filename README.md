@@ -13,7 +13,7 @@ gem5 binary is in /usr/local/bin/gem5.opt
 
  ```shell
 cd docker-gem5
-docker build . -t + <image tag name, like ubuntu1604:v1>.
+docker build . -t + <image tag name, like ubuntu1604:v1>
 # like docker build . -t ubuntugem5:v1
 docker run -it -v `pwd`:/root/work <image tag name, like ubuntu1604:v1> bash
 # docker run -it -v `pwd`:/root/work ubuntugem5:v1
