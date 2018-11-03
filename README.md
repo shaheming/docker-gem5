@@ -2,8 +2,9 @@
 
 Dockerfile for automated gem5 build from public repositories on gem5.org
 
-gem5 source directory is put in /usr/local/src/gem5
-gem5 binary is in /usr/local/bin/gem5.opt
+gem5 source directory is put in `/usr/local/src/gem5`
+
+gem5 binary is in `/usr/local/bin/gem5.opt`
 
 1. docker dowload [docker](https://www.docker.com/get-started), set docker memory > 2 G
 
@@ -36,6 +37,9 @@ docker ps -a
 docker start <container name>
 # then
 docker exec -it <container name> bash 
+
+# test gem5
+/usr/local/bin/gem5.opt /usr/local/src/gem5/configs/example/se.py -c /usr/local/src/gem5/tests/testprogs/hello/bin/x86/linux/hello
  ```
 
 
