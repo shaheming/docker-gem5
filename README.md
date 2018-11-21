@@ -39,7 +39,7 @@ docker start <container name>
 docker exec -it <container name> bash 
 
 # test gem5
-/usr/local/bin/gem5.opt /usr/local/src/gem5/configs/example/se.py -c /usr/local/src/gem5/tests/testprogs/hello/bin/x86/linux/hello
+/usr/local/bin/gem5.opt /usr/local/src/gem5/configs/example/se.py -c /usr/local/src/gem5/tests/test-progs/hello/bin/x86/linux/hello
  ```
 
 
