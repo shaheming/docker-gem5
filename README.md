@@ -45,3 +45,14 @@ docker exec -it <container name> bash
 
 
 Video tutorial: https://youtu.be/ZVauNzx5QUU
+
+
+
+### SPLASH
+
+we should use this command to extract splash pack , if not  you will be failed to extract it.
+
+```shell
+tar xvzf splash2.gz 
+```
+
