@@ -56,3 +56,35 @@ we should use this command to extract splash pack , if not  you will be failed t
 tar xvzf splash2.gz 
 ```
 
+we should change the `BASEDIR := $(HOME)/splash2/codes` in  `code/Makefile.config`  to the path of your splash2
+
+volrend my compile failed, we should install libtiff5-dev  to compile it
+
+```shell
+apt-get install libtiff5-dev
+```
+
+to compile radiosity we should follow this steps
+
+```
+# cd to radiosity path
+cd glibps
+make 
+cd ..
+cd glibdumb
+make
+cd ..
+make
+
+```
+
+you should uncompress the some data in splash2 file
+
+```
+cd splash2/codes/apps/raytrace/inputs
+uncompess *.Z
+cd -
+cd splash2se/codes/apps/volrend/inputs
+uncompess *.Z
+```
+
